@@ -2,10 +2,20 @@
 <html>
     <head>
         <title>Messing and Learning</title>
+        <link href="styles/stylesheet.css" type="text/css" rel="stylesheet" />
         <script src="scripts/canvasTesting.js"></script>
     </head>
     
     <body>
-        <canvas id="myCanvas" width="200" height="100" style="border: 1px black solid;"></canvas>
+        <div class="heading">
+            <h1>This is a messing around page to help learn.</h1>
+        </div>
+        
+        <div id="canvases" class="learnSec">
+            <button onclick="drawRect(0, 0, 150, 75, 1)">Cick For Red</button>
+            <button onclick="drawRect(850, 175, 1000, 250, 2)">Click For Blue</button>
+            <button onclick="clearRect()">Clear Canvas</button>
+            <canvas id="myCanvas" width="1000" height="250" style="border: 1px black solid;"></canvas>
+        </div>
     </body>
 </html>

@@ -4,3 +4,13 @@ body {
     border: 0;
     background-color: lightgray;
 }
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.heading {
+    border-bottom: 1px dashed black;
+    margin-bottom: 12px;
+}
