@@ -11,10 +11,12 @@ function drawRect(x1, y1, x2, y2, color) {
     ctx.fillRect(x1, y1, x2, y2);
 }
 
-function clearCanvas() {
+function drawElipse(x1, y1, diam) {
     var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
+    var ctx = canvas.getContex("2d");
     
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+    ctx.arc(x1, y1, diam, 0, 2 * Math.PI);
+    ctx.strokeStyle("#FF0000");
 }
 
